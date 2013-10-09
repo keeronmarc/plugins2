@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>jQuery Boilerplate</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../src/jquery.boilerplate.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<input class="input_colors" placeholder="Number of Colors"></input>
+			<br>
+			<button class="start">start colors</button>
+			<div id="element"></div>
+		</div>
+
+		<script>
+				$(".start").click(function() {
+					$(".container").ColorMaker({
+						colours: $('.input_colors').val(),
+					});
+				});
+		</script>
+	</body>
+</html>
